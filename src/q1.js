@@ -13,8 +13,19 @@
 
 function swap(x, y){
     // Task 1: Add code here
+
+    if (typeof x == 'number' && typeof y == 'number'){
+        console.log(`(${y}, ${x})`)
+        return 0 //0 signifies that task completed sucesfully
+    }
+    else{
+        return -1 //0 signifies that task failed
+    }
 }
 
 // Task 2: Add code here
+
+swap("Apple", 10)
+swap(9, 17)
 
 module.exports = swap;

@@ -10,17 +10,21 @@
 */
 
 
-// Task 1: Add code here
+patientList = []
 
 function addPatient(patientName){
-    // Task 2: Add code here
+    patientList.push(patientName)
 }
 
-// Task 3: Add code here
+function listPatient(patientList){
+    for (patientName of patientList){
+        console.log(patientName)
+    }
+}
 
 
 addPatient("John");
 addPatient("Mary");
 addPatient("Mark");
 
-listPatient(); // This should list ["John", "Mary", "Mark"]
+listPatient(patientList); // This should list ["John", "Mary", "Mark"]

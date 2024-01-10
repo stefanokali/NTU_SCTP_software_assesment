@@ -6,10 +6,19 @@
     <title>Simple Addition Calculator</title>    
     <script type="text/javascript">
         function add(){
-            const num1 = document.querySelector("#num1").value;
-            const num2 = document.querySelector("#num2").value;
-            const answer = num1 + num2;
-            document.querySelector("#answer").innerText = answer;
+            const num1 = Number(document.querySelector("#num1").value);
+            const num2 = Number(document.querySelector("#num2").value);
+
+             //validate input
+             if ((typeof num1 == 'number' && num1 >= 0) && (typeof num2 == 'number' && num2 >= 0)){
+                const answer = num1 + num2;
+                document.querySelector("#answer").innerText = answer;
+             }
+             else{
+                alert('Input must be numeric and larger than 0!')
+             }
+
+            
         }
     </script>
 </head>
