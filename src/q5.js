@@ -5,6 +5,7 @@
     - To test if the linking works, open q5-output.html using VScode's Live Server extension. It should print "Hello World!"
 */
 
+// Task 1: Add code here
 import print from "./external.js"
 
 // Do not change the code below
