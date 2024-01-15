@@ -15,10 +15,12 @@ function swap(x, y){
     // Task 1: Add code here
 
     if (typeof x == 'number' && typeof y == 'number'){
-        console.log(`(${y}, ${x})`)
+        [y,x] = [x,y]
+        console.log(`(${x}, ${y})`)
         return 0 //0 signifies that task completed sucesfully
     }
     else{
+        console.log(`Error! Both x and y must be numeric!`)
         return -1 //0 signifies that task failed
     }
 }
