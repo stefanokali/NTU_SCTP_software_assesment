@@ -20,9 +20,13 @@ function addPatient(patientName){
 // Task 3: Add code here
 
 function listPatient(patientList){
+    //using "for" to print each one of the patient name
     for (patientName of patientList){
         console.log(patientName)
     }
+
+    //can also print in "list" form by using this
+    //console.log(patientList)
 }
 
 
